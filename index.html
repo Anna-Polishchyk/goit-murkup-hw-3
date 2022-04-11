@@ -5,16 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css"/>
   </head>
   <body>
     <!--Header-->
+    <div class="container">
     <header class="header">
       <!--Navigation-->
       <nav class="site-nav current">
@@ -46,9 +49,9 @@
         <button type="button" class="hero-button">Заказать услугу</button>
       </section>
       <!--hide our advantages-->
-      <section>
+      <section class="section">
         <h2 class="hiden">Our advantages</h2>
-        <ul class="list">
+        <ul class="list advantages">
           <li>
             <h3 class="our-advantages">Внимание к деталям</h3>
             <p class="description">
@@ -78,12 +81,10 @@
             </p>
           </li>
         </ul>
-      </section>
       <!--What we doing-->
-      <section>
         <h2 class="section-title">Чем мы занимаемся</h2>
-        <ul class="list">
-          <li>
+        <ul class="list what-we-doing">
+          <li class="img">
             <img
               src="./images/img-min.jpg"
               alt="разработка"
@@ -91,7 +92,7 @@
               height="294"
             />
           </li>
-          <li>
+          <li class="img">
             <img
               src="./images/img-2-min.jpg"
               alt="стилизация"
@@ -99,7 +100,7 @@
               height="294"
             />
           </li>
-          <li>
+          <li class="img">
             <img
               src="./images/img-3-min.jpg"
               alt="дизайн"
@@ -110,9 +111,9 @@
         </ul>
       </section>
       <!--Our team-->
-      <section class="our-team-section">
+      <section class="our-team-section section">
         <h2 class="section-title">Наша команда</h2>
-        <ul class="list">
+        <ul class="list team">
           <li class="card">
             <img
               src="./images/img-4-min.jpg"
@@ -144,7 +145,6 @@
             <p class="card-text">Marketing</p>
           </li>
           <li class="card">
-            <div class="card">
               <img
                 src="./images/img-7-min.jpg"
                 alt="фото Михаила"
@@ -153,7 +153,6 @@
               />
               <h3 class="card-title">Михаил Ермаков</h3>
               <p class="card-text">UI Designer</p>
-            </div>
           </li>
         </ul>
       </section>
@@ -167,7 +166,7 @@
           <li>
             <a
           href="https://www.google.com/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000/@50.4265807,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
-          class="link map"
+          class="map link"
         >
           г. Киев, пр-т Леси Украинки, 26
         </a>
@@ -183,5 +182,6 @@
         </ul>
       </address>
     </footer>
+    </div>
   </body>
 </html>
