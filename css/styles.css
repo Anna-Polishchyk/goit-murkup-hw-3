@@ -7,9 +7,6 @@
     --background-secondary-white-color: #F5F4FA;
 }
 
-html {
-    box-sizing: border-box;
-}
 
 body {
     background-color: #FFFFFF;
@@ -18,6 +15,8 @@ body {
     width: 1600px;
 }
 .container {
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .list {
@@ -25,7 +24,23 @@ body {
     padding: 0;
     margin: 0;
 }
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
+h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 .logo {
     font-family: Raleway;
     color: var(--accent-color);
@@ -51,16 +66,36 @@ body {
 /* Site navigation */
 .header {
     border-bottom: 1px solid #ECECEC;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.header .container {
     display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.header-logo {
+    margin-right: 93px;
+    align-items: center;
 }
 .site-nav {
     color:var(--primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
+    display: flex;
 }
+
 .site-nav .studio {
     color: var(--primary-text-color);
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu-item {
+    margin-right: 50px;
 }
 
 .current {
@@ -77,6 +112,11 @@ body {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.1;
+    display: flex;
+    margin-left: auto;
+}
+.mail {
+    margin-right: 50px;
 }
 .contacts .link {
     color: var(--secondary-text-color);
@@ -95,6 +135,8 @@ body {
 .hero {
     background-color: hsl(235, 10%, 21%);
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .hero-title {
     margin-top: 0;
@@ -104,7 +146,6 @@ body {
     font-size: 44px;
     line-height: 1.3;
     text-transform: uppercase;
-    padding: 200px 452px 280px;
 }
 .button {
     color: var(--primary-text-color);
@@ -116,6 +157,8 @@ body {
     line-height: 1.6;
     padding: 6px 22px;
     border-radius: 4px;
+    margin-right: 8px;
+    border: none;
 }
 .button:hover {
     color:var(--background-white-color);
@@ -134,6 +177,7 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     padding: 10px 32px;
+    border: none;
 }
 .hero-button:hover {
     color: var(--background-white-color);
@@ -154,23 +198,6 @@ body {
     margin: 1px;
 }
 
-.section {
-    padding: 94px 215px;
-
-}
-h2 {
-    margin-top: 0;
-    margin-bottom: 50px;
-    outline: teal;
-}
-h3 {
-    margin-top: 0;
-    margin-bottom: 10px;
-}
-p {
-    margin-top: 0;
-    margin-bottom: 0;
-}
 /* our advantage */
 
 .our-advantages {
@@ -198,14 +225,17 @@ p {
     display: flex;
     justify-content: center;
 }
+.advantages .item {
+    align-items: center;
+}
 .what-we-doing {
     display: flex;
     justify-content: center;
 }
-.img {
+.item {
     margin-right: 30px;
 }
-.img:last-child {
+.item:last-child {
     margin-right: 0;
 }
 /* our team */
@@ -215,6 +245,7 @@ p {
 .team {
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 .card {
     margin-right: 30px;
@@ -226,17 +257,21 @@ p {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
+    margin-top: 30px;
 }
 .card-text {
     color: var(--secondary-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
+    margin-bottom: 30px;
 }
 
 /* footer */
 .footer {
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer .studio {
     color:var(--background-white-color);
@@ -247,8 +282,11 @@ p {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    margin-left: 215px;
-    margin-bottom: 60px;
+    margin-top: 20px;
+    margin-bottom: 9px;
+}
+.address:last-child {
+    margin-bottom: 0;
 }
 .map {color: var(--background-white-color);}
 .map .link:hover,
@@ -271,6 +309,12 @@ p {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.button:last-child {
+    margin-right: 0;
 }
 .projects-filter .current {
     color: var(--background-white-color);
