@@ -92,11 +92,11 @@ h3 {
 .menu {
     display: flex;
     align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .menu-item {
     margin-right: 50px;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 .menu-item:last-child {
     margin-right: 0;
@@ -350,12 +350,15 @@ h3 {
     font-size: 18px;
     line-height: 2;
     margin-bottom: 4px;
+    margin-top: 0;
 }
 .card-filter {
     color: var(--secondary-text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .card-border {
     border-left: 1px solid #EEEEEE;
